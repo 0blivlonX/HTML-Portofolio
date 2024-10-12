@@ -4,82 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <title>Joker's Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>OblivionX | Red Teamer & Malware Developer</title>
     <style>
-        body{
-            background-color: black;
-            color: white;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        div{
-            float: right;
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0d0d2b, #3c3c70);
+            color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
         }
-        img{
-            height: 2;
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+            animation: fadeIn 2s;
         }
-        h1{
-            font-size: 3rem;
-            font-family: "Raleway", sans-serif;
-            font-optical-sizing: auto;
+
+        header img {
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #00ffcc;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
+            transition: transform 0.3s ease;
         }
-        .para1{
-            font-size: 1.7rem;
-            font-weight: bold;
+
+        header img:hover {
+            transform: scale(1.1);
         }
-        .para2{
-            font-size: 1.4rem;
-            font-family: "Protest Guerrilla", sans-serif;
+
+        h1 {
+            font-size: 5rem;
+            color: #00ffcc;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+            margin: 20px 0;
+            letter-spacing: 2px;
+            display: inline-block;
         }
-        h2 ,p ,ul ,a{
-            font-family: "Raleway", sans-serif;
-            font-optical-sizing: auto;
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        .work{
-            float: right;
+
+        nav {
+            margin: 20px 0;
         }
-        div.flex{
-            display: flex;
-            gap: 100px;
-            padding: 10px;
-            
-        }
-        a{
-            color: white;
+
+        nav a {
+            color: #ffffff;
             text-decoration: none;
-            font-size: 1.22rem;
-            
+            font-size: 1.2rem;
+            margin: 0 15px;
+            padding: 5px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background 0.3s, border-color 0.3s;
         }
-        
+
+        nav a:hover {
+            background: #00ffcc;
+            border-color: #00ffcc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            background: rgba(20, 20, 50, 0.7);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #00ffcc;
+            margin: 30px 0 10px;
+            text-align: left;
+            border-bottom: 2px solid #00ffcc;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 20px 0;
+            color: #f0f0f0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 10px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: "➤";
+            color: #00ffcc;
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-top: 2px solid #00ffcc;
+            position: relative;
+        }
+
+        footer p {
+            margin: 10px 0;
+            color: #f0f0f0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #00ffcc;
+            font-size: 1.5rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #ffffff;
+        }
     </style>
-<script src="https://tryhackme.com/badge/2162031"></script>
 </head>
 <body>
-    <img src="assets/images/my-logo.png" alt="">
-    <div class="center">
-        <h1>WhoAmI</h1>
-        <div class="flex">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="https://t.me/j0k3r_z_7">Contact Me</a></div>
-            <div><a href="./projects.html">Projects</a></div>
-        </div>
-        <p class="para1">I am Joker. <br> <p class="para2">I am a Hacker by profession and am just learning web development out of curiosity <br><br> I am new to web development and eager to learn and grow in the field of web development. I’m currently working on understanding the basics of HTML and how to build simple web pages. </p>
-        
-        <h2>What am i currently focussing on ?</h2>
-        <ul>
-            <li>Creating structured web pages using HTML.</li>
-            <li>Learning how to use different HTML elements like headings, paragraphs, and lists.</li>
-        </ul>
+    <header>
+        <img src="assets/images/my-logo.png" alt="OblivionX Logo">
+        <h1 id="glitch-text">OBLIVIONX</h1>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://t.me/Oblivi0nX">Contact Me</a>
+            <a href="./projects.html">Projects</a>
+        </nav>
 
-        <h2>Future Goals for web development</h2>
-        <p>I plan to expand my knowledge by:</p>
-        <ul>
-            <li>Exploring CSS to style my web pages.</li>
-            <li>Learning JavaScript to add interactivity.</li>
-        </ul>
+        <main>
+            <h2>Welcome</h2>
+            <p>Welcome to my digital realm! I am OblivionX, a passionate Red Teamer and malware developer dedicated to pushing the boundaries of cybersecurity. My journey is about mastering the art of ethical hacking and malware analysis.</p>
+            <p>Currently diving deep into C programming and exploring low-level techniques to enhance my skills in red teaming and malware creation.</p>
+            
+            <h2>Current Focus</h2>
+            <ul>
+                <li>Mastering C programming for malware development.</li>
+                <li>Exploring WinAPI for low-level Windows interactions.</li>
+                <li>Practicing buffer overflow exploitation and system manipulation techniques.</li>
+            </ul>
+
+            <h2>Future Goals</h2>
+            <ul>
+                <li>Develop custom tools for penetration testing and red teaming engagements.</li>
+                <li>Deepen my knowledge in Windows internals for more advanced exploits.</li>
+                <li>Refine malware techniques for stealth and bypassing defenses in controlled environments.</li>
+        
+        </main>
     </div>
+    
+    <footer>
+        <p>Connect with me on:</p>
+        <div class="social-links">
+            <a href="https://t.me/Oblivi0nX">Telegram</a>
+            <a href="https://github.com/0blivlonX">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        const glitchText = document.getElementById('glitch-text');
+        const targetText = 'OblivionX';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    
+        let iteration = -6;
+    
+        function glitchEffect() {
+            const randomText = targetText.split('')
+                .map((char, index) => {
+                    if (index < iteration) {
+                        return targetText[index];
+                    }
+                    return characters[Math.floor(Math.random() * characters.length)];
+                }).join('');
+    
+            glitchText.innerText = randomText;
+    
+            iteration += 1 / 6;  // Slower reveal effect
+            if (iteration < targetText.length + 1) {
+                requestAnimationFrame(glitchEffect);
+            }
+        }
+    
+        glitchEffect();  // Start the animation
+    </script>    
 </body>
 </html>
